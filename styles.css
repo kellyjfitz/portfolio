@@ -1,10 +1,12 @@
 :root {
   --headline-font: "EB Garamond", serif;
   --sans-font: "Montserrat", sans-serif;
-  --background-color: rgb(230, 229, 229);
+  --accent-color: rgb(230, 229, 229);
+  --background-color: #fafafa;
 }
 body {
   font-family: var(--sans-font);
+  background-color: var(--background-color);
 }
 h1 {
   font-family: var(--sans-font);
@@ -34,15 +36,43 @@ h3 {
 }
 
 .section {
-  border: 2px dotted var(--background-color);
+  border: 2px dotted #808080;
   border-radius: 20px;
   padding: 30px;
+  margin-bottom: 50px;
 }
 
 .navbar {
-  background: var(--background-color);
+  background: var(--accent-color);
+}
+.navbar-brand {
+  font-weight: 800;
+  font-size: 18px;
+}
+.active {
+  font-weight: 500;
 }
 
+.highlight {
+  font-weight: 400;
+}
+
+footer {
+  padding: 5px;
+  background-color: #808080;
+}
+footer ul {
+  color: white;
+  font-size: 25px;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+  list-style: none;
+}
 @media (max-width: 576px) {
   h1 {
     font-size: 60px;
