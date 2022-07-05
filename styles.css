@@ -69,9 +69,15 @@ footer ul {
   margin: 0;
 }
 
-footer ul li {
+footer li {
   display: inline;
   list-style: none;
+}
+footer a {
+  color: inherit;
+}
+footer a:hover {
+  color: black;
 }
 
 .flex-container {
