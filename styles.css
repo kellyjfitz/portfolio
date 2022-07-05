@@ -73,14 +73,32 @@ footer ul li {
   display: inline;
   list-style: none;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.sm-show {
+  display: none;
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 60px;
     line-height: 60px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .hero {
     padding: 50px 20px;
+  }
+  .sm-hide {
+    display: none;
+  }
+  .sm-show {
+    display: inline-block;
   }
 }
