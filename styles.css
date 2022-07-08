@@ -32,6 +32,32 @@ h3 {
   font-weight: 600;
 }
 
+h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: 500;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.navbar {
+  background: var(--accent-color);
+}
+.navbar-brand {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* the below makes active links in the nar bar a bit darker */
+.active {
+  font-weight: 500;
+}
+
 .hero {
   text-align: center;
   padding: 100px 0;
@@ -45,20 +71,9 @@ h3 {
   margin-bottom: 50px;
 }
 
-.navbar {
-  background: var(--accent-color);
-}
-.navbar-brand {
-  font-weight: 800;
-  font-size: 18px;
-}
-.active {
-  font-weight: 500;
-}
 
-.highlight {
-  font-weight: 400;
-}
+
+
 
 
 footer {
@@ -73,38 +88,33 @@ footer ul  {
   margin: 0;
 }
 
- .contact ul {
+footer li, .contact li {
+  display: inline;
+  list-style: none;
+}
+footer a,
+.btn a {
+  color: inherit;
+  text-decoration: none;
+}
+footer a:hover, .contact a:hover  {
+  color: black;
+}
+
+.contact ul {
   color: black;
   font-size: 70px;
   padding: 0;
   text-align: center;
   margin: 0;
 }
-
-footer li, .contact li {
-  display: inline;
-  list-style: none;
-}
-footer a,
-.btn a, .contact a {
-  color: inherit;
+.contact a {
   text-decoration: none;
-}
-footer a:hover {
-  color: black;
+  color: var(--darker-color);
 }
 
-.contact a:hover {
-  color:  var(--darker-color);
-}
 
-img {
-  border-radius: 20px;
-}
 
-.sm-show {
-  display: none;
-}
 .btn-info {
   background-color: #808080;
   border: 1px solid #808080;
@@ -119,19 +129,20 @@ img {
   
 }
 
-h3 a {
-  text-decoration: none;
-  color: inherit;
-}
 
 .logo {
   max-height: 90px;
 }
 .skills {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.sm-show {
+  display: none;
 }
 
 @media (max-width: 576px) {
