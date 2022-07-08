@@ -68,7 +68,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 20px;
   padding: 30px;
-  margin-bottom: 50px;
+  margin:0 0 50px;
 }
 
 
@@ -144,7 +144,13 @@ footer a:hover, .contact a:hover  {
 .sm-show {
   display: none;
 }
+.xl-show {
+  display:none;
+}
 
+.flourish-embed {
+  margin-top: 20px;
+}
 @media (max-width: 576px) {
   h1 {
     font-size: 60px;
@@ -161,8 +167,9 @@ footer a:hover, .contact a:hover  {
  }
 }
 @media (max-width: 768px) {
-  
-  
+  .md-hide {
+    display: none;
+  }
   .buttons {
     margin-bottom: 30px;
     margin-top: 20px;
@@ -176,5 +183,10 @@ footer a:hover, .contact a:hover  {
   }
   .hero {
     padding: 50px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .xl-show {
+    display: inline-block;
   }
 }
